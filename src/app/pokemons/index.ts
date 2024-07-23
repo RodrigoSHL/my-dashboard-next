@@ -1,2 +1,2 @@
-export type {SimplePokemon} from './interface/simple-pokemon';
-export type {PokemonsResponse} from './interface/pokemon-response';
+export type {SimplePokemon} from './interfaces/simple-pokemon';
+export type {PokemonsResponse} from './interfaces/pokemon-response';
