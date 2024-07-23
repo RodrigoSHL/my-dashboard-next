@@ -1,6 +1,6 @@
 import Image from "next/image"
 import path from "path"
-import { IoBrowsersOutline, IoCalculator, IoLogoReact } from "react-icons/io5"
+import { IoBrowsersOutline, IoCalculator, IoFolder, IoLogoReact } from "react-icons/io5"
 import { SidebarMenuItem } from "./SidebarMenuItem"
 
 export const Sidebar = () => {
@@ -17,6 +17,12 @@ export const Sidebar = () => {
             icon: <IoCalculator size={40} />,
             title: "Counter",
             subtitle: "Local State"
+        },
+        {
+            path: "/dashboard/pokemon",
+            icon: <IoFolder size={40} />,
+            title: "Pokemon",
+            subtitle: "Pokemon Folder"
         }
     ]
     return (

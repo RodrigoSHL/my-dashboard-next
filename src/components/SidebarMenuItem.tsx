@@ -9,17 +9,18 @@ interface Props {
     subtitle: string;
 }
 
-
-
-export const SidebarMenuItem = ({ path, icon, title, subtitle}: Props) => {
+export const SidebarMenuItem = ({ path, icon, title, subtitle }: Props) => {
 
     const currentPath = usePathname();
 
     return (
-        <Link href={path} className={`w-full px-2 inline-flex space-x-2 items-center border-b border-slate-700 py-3 ${ (currentPath === path) && 'bg-blue-800'} hover:bg-white/5 transition ease-linear duration-150`}>
+        <Link href={path}
+            className={`
+                w-full px-2 inline-flex space-x-2 items-center border-b border-slate-700 py-3 
+                ${(currentPath === path) && 'bg-blue-800'} hover:bg-white/5 transition ease-linear duration-150
+            `}>
             <div>
                 {icon}
-
             </div>
             <div className="flex flex-col">
                 <span className="text-lg font-bold leading-5 text-white">{title}</span>
