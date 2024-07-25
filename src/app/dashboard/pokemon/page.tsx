@@ -11,7 +11,7 @@ const getPokemons = async( limit = 20, offset= 0 ):Promise<SimplePokemon[]> => {
       name: pokemon.name,
     }));
 
-    // throw new Error('Esto es un error que no debería de suceder');
+    throw new Error('Esto es un error que no debería de suceder');
     // throw notFound();
 
     return pokemons;
@@ -22,7 +22,7 @@ const getPokemons = async( limit = 20, offset= 0 ):Promise<SimplePokemon[]> => {
 
 export default async function PokemonsPage() {
 
-  const pokemons = await getPokemons(151);
+  const pokemons = await getPokemons(500);
   
   return (
     <div className="flex flex-col">
