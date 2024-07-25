@@ -19,7 +19,7 @@ export const Sidebar = () => {
             subtitle: "Local State"
         },
         {
-            path: "/dashboard/pokemon",
+            path: "/dashboard/pokemons",
             icon: <IoFolder size={40} />,
             title: "Pokemon",
             subtitle: "Pokemon Folder"
