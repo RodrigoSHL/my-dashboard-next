@@ -1,6 +1,6 @@
 import Image from "next/image"
 import path from "path"
-import { IoBrowsersOutline, IoCalculator, IoFolder, IoLogoReact } from "react-icons/io5"
+import { IoBrowsersOutline, IoCalculator, IoFolder, IoHeartOutline, IoLogoReact } from "react-icons/io5"
 import { SidebarMenuItem } from "./SidebarMenuItem"
 
 export const Sidebar = () => {
@@ -23,6 +23,12 @@ export const Sidebar = () => {
             icon: <IoFolder size={40} />,
             title: "Pokemon",
             subtitle: "Pokemon Folder"
+        },
+        {
+            path: "/dashboard/favorites",
+            icon: <IoHeartOutline size={40} />,
+            title: "Favorites",
+            subtitle: "Pokemon Favorites"
         }
     ]
     return (
