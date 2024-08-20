@@ -7,7 +7,7 @@ interface CounterState {
 
 
 const initialState: CounterState = {
-  count: 5,
+  count: 10,
   isReady: false,
 }
 
@@ -26,7 +26,7 @@ const counterSlice = createSlice({
       state.count++;
     },
 
-    substractOne(state) {
+    subtractOne(state) {
       if ( state.count === 0 ) return;
 
       state.count--;
@@ -40,6 +40,6 @@ const counterSlice = createSlice({
   }
 });
 
-export const { addOne, substractOne, resetCount, initCounterState } = counterSlice.actions;
+export const { addOne, subtractOne, resetCount, initCounterState } = counterSlice.actions;
 
 export default counterSlice.reducer;
